@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weather_status_size">20sp</dimen>
+    <dimen name="margin_xl">32dp</dimen>
+    <dimen name="weather_img_size">150dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="weather_time_size">19sp</dimen>
+    <dimen name="temp_size">63sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="item_img_size">34dp</dimen>
+    <dimen name="card_width">90dp</dimen>
+    <dimen name="card_img_size">45dp</dimen>
+</resources>

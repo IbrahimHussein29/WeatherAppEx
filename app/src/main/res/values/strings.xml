@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WeatherAppEx</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mostly_cloudy">Mostly Cloudy</string>
+    <string name="weather_time_text">Mon June 17| 10:00 AM</string>
+    <string name="_25">25°</string>
+    <string name="h_27_l_18">H:27 L:18</string>
+    <string name="_22">22%</string>
+    <string name="rain">Rain</string>
+    <string name="_12_km_h">12 km/h</string>
+    <string name="wind_speed">Wind speed</string>
+    <string name="_18">18%</string>
+    <string name="humidity">Humidity</string>
+    <string name="today">Today</string>
+    <string name="next_7_day">Next 7 day ></string>
+    <string name="text">text</string>
+    <string name="_20">20</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="day">Day</string>
+</resources>

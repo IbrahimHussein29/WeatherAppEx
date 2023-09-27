@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.main.future.FutureFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_margin="@dimen/margin_medium">
+
+                <ImageView
+                    android:id="@+id/back_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/app_name"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background2"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="@dimen/margin_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/cloudy_sunny"
+                        android:contentDescription="@string/app_name"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tomorrow"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_25"
+                            android:textSize="43sp"
+                            android:textColor="@color/white"
+                            android:layout_marginVertical="@dimen/margin_small"/>
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mostly_cloudy"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:layout_weight="0.33"
+                        android:orientation="vertical"
+                        tools:layout_margin="16dp">
+
+                        <ImageView
+                            android:id="@+id/rain_img"
+                            android:layout_width="@dimen/item_img_size"
+                            android:layout_height="@dimen/item_img_size"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/rain" />
+
+                        <TextView
+                            android:id="@+id/rain_percent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_22"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/rain_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rain"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:layout_weight="0.33"
+                        android:orientation="vertical"
+                        tools:layout_margin="@dimen/margin_medium">
+
+                        <ImageView
+                            android:id="@+id/wind_img"
+                            android:layout_width="@dimen/item_img_size"
+                            android:layout_height="@dimen/item_img_size"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/wind" />
+
+                        <TextView
+                            android:id="@+id/wind_speed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_12_km_h"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/wind_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wind_speed"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_small"
+                        android:layout_weight="0.33"
+                        android:orientation="vertical"
+                        tools:layout_margin="@dimen/margin_medium">
+
+                        <ImageView
+                            android:id="@+id/humidity_img"
+                            android:layout_width="@dimen/item_img_size"
+                            android:layout_height="@dimen/item_img_size"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/humidity" />
+
+                        <TextView
+                            android:id="@+id/humidity_percent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_18"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/humidity_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/humidity"
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/future_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:padding="@dimen/margin_medium"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
