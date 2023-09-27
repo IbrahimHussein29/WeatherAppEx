@@ -11,5 +11,7 @@ class HourlyVH(val binding: CellHourlyBinding): RecyclerView.ViewHolder(binding.
         binding.cardImg.setImageResource(item.img)
         binding.degreeText.text=item.tempTxt
         binding.hourText.text=item.hourTxt
+
     }
+
 }

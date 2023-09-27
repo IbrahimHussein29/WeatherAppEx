@@ -10,5 +10,6 @@ class FutureVH(val binding: CellFutureItemBinding) : RecyclerView.ViewHolder(bin
         binding.dayText.text=item.day
         binding.highText.text=item.highTamp
         binding.lowText.text=item.lowTamp
+        binding.statusText.text=item.status
     }
 }
